@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600&family=Roboto:wgh@100;300;400;500700&display=swap');
+
+/*Variables*/
+:root{
+    --font-family: 'Roboto', sans-serif;
+    --font-family2: 'Raleway', sans-serif;
+    --thin-font: 100;
+    --extralight-font: 200;
+    --light-font: 300;
+    --regular-font: 400;
+    --medium-font: 500;
+    --semibold-font: 600;
+    --bold-font: 700;
+}
+/*End of variables.*/
+
+html{
+    scroll-behavior: smooth;
+}
+/*End of html style.*/
+
+/*CSS reset.*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    cursor: pointer;
+}
+
+body{
+    font-family: var(--font-family2);
+    background-image: url("/images/wallpaperflare.com_wallpaper1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    color: white;
+}
+/*CSS reset end.*/
+
+.nav{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 3.5rem;
+    background-color: rgba(179, 165, 128, 0.2);
+    box-shadow: 0 3px 5px rgba(162, 149, 116, 0.6);
+}
+/*End nav class style.*/
+
+.logo{
+    border-radius: 20px 10px;
+    border: 2px solid #A29574;
+    font-size: 22pt;
+    padding: 4px 4px;
+    margin: 5px;
+}
+/*End logo style.*/
+
+.logo:hover{
+    box-shadow: 0 0 2px 2px rgba(179, 165, 128, 0.5);
+    background-color: rgba(162, 149, 116, 0.5);
+    cursor: pointer;
+}
+/*End logo hover style.*/
+
+.social{
+    font-family: var(--font-family);
+    font-weight: var(--bold-font);
+}
+/*End social class style.*/
+
+.inter{
+    font-family: var(--font-family);
+    font-weight: var(--bold-font);
+}
+/*End inter class style.*/
+
+.duction{
+    font-family: var(--font-family2);
+    font-weight: var(--thin-font);
+}
+/*End duction class style.*/
+
+#btn_reg, #btn_sign{
+    background-color: rgba(162, 149, 116, 0.2);
+    border-radius: 10px 10px 10px;
+    transition: 0.5s ease-in;
+    border: none;
+}
+
+.register, .signin{
+    color: #FFFFFF;
+    font-family: var(--font-family2);
+    font-weight: var(--medium-font);
+    font-size: 18pt;
+}
+/*End register and signin style.*/
+
+.register:hover{
+    border-bottom: 2px solid rgb(179, 165, 128);
+    background-color: rgba(162, 149, 116, 0.2);
+    border-radius: 10px 10px 10px;
+    padding: 4px 4px;
+    transition: 0.3s;
+}
+/*End register class hover style.*/
+
+.signin:hover{
+    border-bottom: 2px solid rgb(179, 165, 128);
+    background-color: rgba(162, 149, 116, 0.2);
+    border-radius: 10px 10px 10px;
+    padding: 4px 4px;
+    transition: 0.3s;
+}
+/*End signin hover style.*/
+
+.links:visited{
+    color: #FFFFFF;
+}
+/*End links style.*/
+
+ul{
+    display: flex;
+    gap: 1.9rem;
+}
+/*End ul style.*/
+
+.info{
+    margin-top: 15rem;
+    display: flex;
+}
+/*End info style.*/
+
+.intro{
+    justify-content: center;
+    margin-top: 8.75rem;
+    align-items: center;
+    max-width: 68.75rem;
+    margin: auto;
+}
+/*End intro style.*/
+
+.welcome{
+    font-size: 24pt;
+    font-weight: var(--bold-font);
+    font-family: var(--font-family);
+}
+/*End welcome style.*/
+
+.definition{
+    font-family: var(--font-family2);
+    width: 37.5rem;
+}
+/*End definition style.*/
+
+.logbook{
+    background-color: rgba(162, 149, 116, 0.5);
+    box-shadow: 0 3px 5px rgba(162, 149, 116, 0.6);
+    border-radius: 5px;
+    margin: auto;
+    padding: auto;
+    width: 20%;
+}
+/*End logbook style.*/
+
+.clearfix::after{
+    content: " ";
+    clear: both;
+    display: table;
+}
+/*End clearfix style.*/
+
+h2{
+    margin-top: 0.313rem;
+    margin-bottom: 0.313rem;
+    text-align: center;
+    font-family: var(--font-family2);
+    font-weight: var(--medium-font);
+}
+/*End h2 style.*/
+
+.margin{
+    justify-content: center;
+    text-align: center;
+    padding: 3px;
+}
+/*End margin style.*/
+
+.form{
+    flex-direction: column;
+    outline: none;
+    border-radius: 8px;
+    width: 80%;
+    height: 30px;
+    padding: auto;
+    margin: auto;
+}
+/*End form style.*/
+
+.center{
+    text-align: center;
+}
+/*End center style.*/
+
+.btn{
+    text-align: center;
+    align-items: center;
+    background-color: rgba(179, 165, 128, 0.8);
+    border-radius: 5px;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px;
+    margin: 20px auto;
+}
+/*End btn style.*/
+
+.btn:hover{
+    cursor: pointer;
+    background-color: rgba(162, 149, 116, 0.8);
+    border-bottom: 2px solid rgb(179, 165, 128, 0.6);
+}
+/*End btn hover style.*/
+
+.copyrights{
+    background-color: rgba(179, 165, 128, -0.1);
+    text-align: center;
+    margin-top: 480px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 18pt;
+    font-family: var(--font-family2);
+    font-weight: var(--medium-font);
+    box-shadow: 0 -3px 5px rgba(162, 149, 116, 0.6);
+}
+/*End copyrights style.*/
+
+/*-----------------------------------------------------------*/
+/*Beginning of the home page.*/
+.h1{
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+    font-size: 20pt;
+    background-color: rgba(179, 165, 128, 0.4);
+    box-shadow: 0 3px 5px rgba(162, 149, 116, 0.4);
+    margin: auto;
+    padding: auto;
+    width: 40%;
+}
+/*End h1 class style.*/
+
+.select{
+    font-family: var(--font-family);
+    font-weight: var(--semibold-font);
+}
+/*End select style.*/
+
+.event{
+    font-family: var(--font-family2);
+    font-weight: var(--light-font);
+}
+/*End event style.*/
+
+.section1, .section2{
+    background-color: rgba(179, 165, 128, 0.3);
+    box-shadow: 0 3px 5px rgb(162, 149, 116, 0.6);
+    justify-content: center;
+    display: flex;
+    margin: auto;
+    padding: auto;
+    margin-top: 120px;
+    max-width: 40%;
+}
+/*End of section 1 style.*/
+
+.art, .music{
+    margin: 20px;
+    padding: 20px;
+}
+/*End of art style.*/
+
+.art, .music, img{
+    margin-right: auto;
+}
+/*End of img style.*/
+
+.art_text, .music_text{
+    font-size: 22pt;
+    padding-left: 30px;
+    font-family: var(--font-family2);
+    font-weight: var(--medium-font);
+}
+/*End of art text style.*/
+
+.art_ticket, .music_ticket{
+    width: 68%;
+}
+/*End of art ticket style.*/
+
+.art_booking, .music_booking{
+    font-size: 22pt;
+    margin-right: 160px;
+    padding: auto;
+    text-align: center;
+}
+/*End of art/music booking style.*/
+
+.form{
+    outline: none;
+    border-radius: 6px;
+    height: 28px;
+    margin-bottom: 4px;
+    padding: auto;
+    width: 60%;
+}
+/*End of form style.*/
+
+.art_submit, .music_submit{
+    text-align: center;
+}
+
+.btn_art, .btn_music{
+    align-items: center;
+    background-color: rgba(179, 165, 128, 0.8);
+    border-radius: 5px;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px;
+    margin: 20px auto;
+}
+/*End of art/music submit style.*/
+
+.btn_art:hover, .btn_music:hover{
+    cursor: pointer;
+    background-color: rgba(162, 149, 116, 0.8);
+    border-bottom: 2px solid rgba(179, 165, 128, 0.6);
+}
+
+.footer{
+    background-color: rgba(179, 165, 128, -0.1);
+    text-align: center;
+    font-size: 18pt;
+    font-family: var(--font-family2);
+    font-weight: var(--medium-font);
+    box-shadow: 0 -3px 5px rgba(162, 149, 116, 0.6);
+    margin-top: 180px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: sticky;
+}
