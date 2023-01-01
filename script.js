@@ -128,9 +128,9 @@ function validation1(){
 }
 
 //JavaScript functions home page.
-//function home(){
-    //return artist();
-//}
+/*function home(){
+    return artist();
+}*/
 
 function artist(){
     //Prevent submission.
@@ -139,18 +139,18 @@ function artist(){
     });
 
     //Const variable.
-    const artist = document.getElementById("artist").value;
+    const people = document.getElementById("artist").value;
     const email = document.getElementById("email").value;
     const phone = document.getElementById("phone").value;
     const date = document.getElementById("date").value;
     let message, message1, message2, message3, message4, message5;
 
     //Validate user's input.
-    if(!artist){
+    if(!people){
         message = "Please select an artist!";
         document.getElementById("incomplete").innerHTML = message;
         document.getElementById("incomplete").style.color = "red";
-        artist.focus();
+        people.focus();
     }
 
     if(!email){
@@ -181,7 +181,7 @@ function artist(){
 
 function bookingValidation(){
     //Validate booking.
-    if(email === email && phone === phone && date === date){
+    if(people === people && email === email && phone === phone && date === date){
         alert("Thank you for booking your event!");
     }
     else{
