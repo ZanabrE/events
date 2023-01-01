@@ -128,9 +128,9 @@ function validation1(){
 }
 
 //JavaScript functions home page.
-function home(){
-    return artist();
-}
+//function home(){
+    //return artist();
+//}
 
 function artist(){
     //Prevent submission.
@@ -143,27 +143,34 @@ function artist(){
     const email = document.getElementById("email").value;
     const phone = document.getElementById("phone").value;
     const date = document.getElementById("date").value;
-    let message, message1, message2;
+    let message, message1, message2, message3, message4, message5;
 
     //Validate user's input.
-    if(!email){
-        message = "Please enter email address!";
+    if(!artist){
+        message = "Please select an artist!";
         document.getElementById("incomplete").innerHTML = message;
         document.getElementById("incomplete").style.color = "red";
+        artist.focus();
+    }
+
+    if(!email){
+        message1 = "Please enter email address!";
+        document.getElementById("incomplete1").innerHTML = message1;
+        document.getElementById("incomplete1").style.color = "red";
         email.focus();
     }
 
     if(!phone){
-        message1 = "Please enter a phone number";
-        document.getElementById("incomplete1").innerHTML = message1;
-        document.getElementById("incomplete1").style.color = "red";
+        message2 = "Please enter a phone number";
+        document.getElementById("incomplete2").innerHTML = message2;
+        document.getElementById("incomplete2").style.color = "red";
         phone.focus();
     }
 
     if(!date){
-        message2 = "Please enter the date!"
-        document.getElementById("incomplete2").innerHTML = message2;
-        document.getElementById("incomplete2").style.color = "red";
+        message3 = "Please enter the date!"
+        document.getElementById("incomplete3").innerHTML = message3;
+        document.getElementById("incomplete3").style.color = "red";
         date.focus();
     }
     else{
