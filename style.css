@@ -40,7 +40,7 @@ a:hover{
 
 body{
     font-family: var(--font-family2);
-    background-image: url("/images/wallpaperflare.com_wallpaper1.jpg");
+    background-image: url("images/wallpaperflare.com_wallpaper1.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
