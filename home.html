@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html lan="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ernesto L Zanabria | Home</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+              rel="stylesheet"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+              rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLAjC"
+              crossorigin="anonymous"/>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+                crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+        <div class="h1">
+            <h1><span class="select">Select the</span> <span class="event">Event</span></h1>
+        </div><!--End of h1 class.-->
+
+        <section class="section1">
+            <div class="art">
+                <img src="/images/icons8-drawing-96.png" alt="art"
+                     style="filter: invert(73%) sepia(24%) saturate(373%) hue-rotate(6deg) brightness(87%) contrast(87%);"/>
+                <p class="art_text">Art</p>
+            </div><!--End of art class.-->
+
+            <div class="art_ticket">
+                <h2 class="art_booking">Art Ticket Booking</h2>
+                <form>
+                    <div class="margin_art">
+                        <select id="artist" class="form">
+                            <option disable selected>Artist</option>
+                            <option value="Pablo">Pablo Picasso</option>
+                            <option value="Vincent">Vincent van Gogh</option>
+                            <option value="Leonardo">Leonardo da Vinci</option>
+                            <option value="Michelangelo">Michelangelo di Lodovico</option>
+                            <span id="incomplete"></span>
+                        </select>
+                    </div>
+
+                    <div class="margin_art">
+                        <input autocomplete="off" autofocus id="email" class="form" placeholder="Email" name="email" type="text"/>
+                        <span id="incomplete"></span>
+                    </div>
+
+                    <div class="margin_art">
+                        <input autocomplete="off" autofocus id="phone" class="form" placeholder="Phone number" name="phone" type="tel"/>
+                        <span id="incomplete1"></span>
+                    </div>
+
+                    <div class="margin_art">
+                        <input id="date" class="form" name="date" type="date"/></label>
+                        <span id="incomplete2"></span>
+                    </div>
+
+                    <div class="margin_art">
+                        <select id="type" class="form">
+                            <option disable selected>Choose Ticket Type</option>
+                            <option value="standard">Standard</option>
+                            <option value="vip">VIP</option>
+                        </select>
+                    </div>
+
+                    <div class="margin_art">
+                        <select id="number" class="form">
+                            <option disable selected>Number of Tickets</option>
+                            <option value="digit">1</option>
+                            <option value="digit">2</option>
+                            <option value="digit">3</option>
+                            <option value="digit">4</option>
+                        </select>
+                    </div>
+
+                    <div class="art_submit">
+                        <button class="btn_art" onclick="artist()" type="submit">Submit</button>
+                    </div>
+                </form><!--End of art ticket form.-->
+            </div><!--End of art ticket class.-->
+        </section><!--End of section 1.-->
+
+        <section class="section2">
+            <div class="music">
+                <img src="/images/icons8-music-notation-96.png" alt="music"
+                     style="filter: invert(73%) sepia(24%) saturate(373%) hue-rotate(6deg) brightness(87%) contrast(87%);"/>
+                <p class="music_text">Music</p>
+            </div><!--End of music class.-->
+
+            <div class="music_ticket">
+                <h2 class="music_booking">Music Ticket Booking</h2>
+                <i>
+                    <div class="margin_music">
+                        <select id="musician" class="form">
+                            <option disable selected>Musician</option>
+                            <option value="Marvin">Marvin Gaye</option>
+                            <option value="Bob">Bob Marley</option>
+                            <option value="Dylan">Bob Dylan</option>
+                            <option value="Nirvana">Nirvana</option>
+                            <option value="Michael">Michael Jackson</option>
+                        </select>
+                    </div>
+
+                    <div clas="margin_music">
+                        <input autocomplete="off" autofocus id="email" class="form" placeholder="Email" name="email" type="text"/>
+                    </div>
+
+                    <div class="margin_music">
+                        <input autocomplete="off" autofocus id="phone" class="form" placeholder="Phone number" name="phone" type="tel"/>
+                    </div>
+
+                    <div class="margin_music">
+                        <input id="date" placeholder="Booking Date" class="form" name="date" type="date"/>
+                    </div>
+
+                    <div class="margin_music">
+                        <select id="type" class="form">
+                            <option disable selected>Choose Ticket Type</option>
+                            <option value="standard">Standard</option>
+                            <option value="vip">VIP</option>
+                        </select>
+                    </div>
+
+                    <div class="margin_music">
+                        <select id="number" class="form">
+                            <option disable selected>Number of Tickets</option>
+                            <option value="digit">1</option>
+                            <option value="digit">2</option>
+                            <option value="digit">3</option>
+                            <option value="digit">4</option>
+                        </select>
+                    </div>
+
+                    <div class="music_submit">
+                        <button class="btn_music" type="submit">Submit</button>
+                    </div>
+                </form><!--End of music ticket form.-->
+            </v><!--End of music ticket class.-->
+        </section><!--End of section 2.-->
+
+        <script>
+            home();
+        </script>
+
+        <footer class="footer">
+            <p>Designed &amp; Build by Ernesto L Zanabria</p>
+            <p>Copyright &copy; 2022, All Rights Reserve</p>
+        </footer>
+    </body>
+</html>
