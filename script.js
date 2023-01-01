@@ -30,7 +30,9 @@ function register(){
 
 function reg(){
     //Prevent submission.
-    event.preventDefault();
+    document.addEventListener('submit', function(event) {
+        event.preventDefault();
+    });
 
     //Variables for input validation.
     const username = document.getElementById("username").value;
@@ -65,12 +67,10 @@ function reg(){
         //Needed another function to validate.
         return validation();
     }
+    
 }
 
 function validation(){
-    //Prevent submission.
-    event.preventDefault();
-
     //Validate all the inputs.
     if(username === username && password === password && confirmation === confirmation){
         alert("Congratulations! You are now registered.");
@@ -84,7 +84,9 @@ function validation(){
 
 function sign(){
     //Prevent submission.
-    event.preventDefault();
+    document.addEventListener('submit', function(event) {
+        event.preventDefault();
+    });
 
     //Variables.
     const username = document.getElementById("username1").value;
@@ -114,9 +116,6 @@ function sign(){
 }
 
 function validation1(){
-    //Prevent submission.
-    event.preventDefault();
-
     //Validate sign-in inputs.
     if(username === username && password === password){
         alert("Successful sign-in!");
@@ -135,7 +134,9 @@ function home(){
 
 function artist(){
     //Prevent submission.
-    event.preventDefault();
+    document.addEventListener('submit', function(event) {
+        event.preventDefault();
+    });
 
     //Const variable.
     const artist = document.getElementById("artist").value;
@@ -172,9 +173,6 @@ function artist(){
 }
 
 function bookingValidation(){
-    //Prevent submission.
-    event.preventDefault();
-
     //Validate booking.
     if(email === email && phone === phone && date === date){
         alert("Thank you for booking your event!");
