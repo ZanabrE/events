@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lan="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ernesto L Zanabria | Events</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+              rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLAjC"
+              crossorigin="anonymous"/>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+                crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <nav class="nav">
+                <div class="logo">
+                    <p class="social">Social</p>
+                    <p><span class="inter">Inter</span><span class="duction">duction</span></p>
+                </div><!--End of logo.-->
+
+                <ul class="links">
+                    <li><button id="btn_reg"><a class="register" href="#register">Register</a></button></li>
+                    <li><button id="btn_sign"><a class="signin" href="#signin">Sign-in</a></button></li>
+                </ul><!--End of links.-->
+            </nav><!--End of navigation.-->
+        </header><!--End of header.-->
+
+        <section class="info">
+            <div class="intro">
+                <h1 class="welcome">Welcome to Interduction</h1>
+                <p class="definition">
+                    This is a web application where you can find social events
+                    such as Art, Music, Graphic Design, and Concerts.
+                    The name Interduction is a combination of Interaction and
+                    Introduction.
+                </p><!--End of definition class.-->
+            </div><!--End of intro class.-->
+
+            <div id="logbook_reg" class="logbook clearfix">
+                <h2>Register</h2>
+                <form action="/" method="post">
+                    <div class="margin">
+                        <input autocomplete="off" autofocus class="form" id="username" name="username" placeholder="Username" type="text">
+                        <p><span id="error"></span></p>
+                    </div>
+
+                    <div class="margin">
+                        <input autocomplete="off" autofocus class="form" id="password" name="password" placeholder="Password" type="password">
+                        <p><span id="error2"></span></p>
+                    </div>
+
+                    <div class="margin">
+                        <input autocomplete="off" autofocus class="form" id="confirmation" name="confirmation" placeholder="Confirmation" type="confirmation">
+                        <p><span id="error3"></span></p>
+                    </div>
+
+                    <div class="center">
+                        <button class="btn" onclick="reg()" type="submit">Register</button>
+                    </div>
+                </form><!--End of form.-->
+            </div><!--End of logbook reg.-->
+
+            <div id="logbook_sign" class="logbook clearfix">
+                <h2>Sign-in</h2>
+                <form action="/" method="post">
+                    <div class="margin">
+                        <input autocomplete="off" autofocus class="form" id="username1" name="username" placeholder="Username" type="text">
+                        <p><span id="error4"></span></p>
+                    </div>
+
+                    <div class="margin">
+                        <input autocomplete="off" autofocus class="form" id="password1" name="password" placeholder="Password" type="password">
+                        <p><span id="error5"></span></p>
+                    </div>
+
+                    <div class="center">
+                        <button class="btn" onclick="sign()" type="submit">Sign-in</button>
+                    </div>
+                </form><!--End of form-->
+            </div><!--End of logbook sign.-->
+        </section><!--End of section.-->
+
+        <script>
+            register();
+        </script>
+
+        <footer class="copyrights">
+            <p>Designed &amp; Build by Ernesto L Zanabria</p>
+            <p>Copyright &copy; 2022, All Rights Reserve</p>
+        </footer><!--End of footer.-->
+    </body><!--End of body.-->
+</html><!--End of html.-->
