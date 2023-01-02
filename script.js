@@ -1,7 +1,12 @@
-function register(){
-    //Hide/show an element.
+function index(){
     const register = document.getElementById('logbook_reg').style.display = 'none';
     const signin = document.getElementById('logbook_sign').style.display = 'none';
+}
+
+function register(){
+    //Hide/show an element.
+    //const register = document.getElementById('logbook_reg').style.display = 'none';
+    //const signin = document.getElementById('logbook_sign').style.display = 'none';
     const record_reg = document.getElementById('btn_reg');
     const record_sign = document.getElementById('btn_sign');
 
@@ -138,7 +143,7 @@ function artistBtn(){
     });
 
     //Const variable.
-    const artist = document.getElementById("artist").value;
+    const artist = document.getElementById("artist");
     const email = document.getElementById("email").value;
     const phone = document.getElementById("phone").value;
     const date = document.getElementById("date").value;
@@ -152,6 +157,17 @@ function artistBtn(){
         document.getElementById("incomplete").innerHTML = message;
         document.getElementById("incomplete").style.color = "red";
         artist.focus();
+
+        if(artist){
+            const tableElement = document.getElementById('table');
+            const trElement = document.createElement('tr');
+            const tbodyElement = document.createElement('tbody');
+            const artistEle = document.createElement('td');
+            artistEle.innerHTML = 'artist';
+            trElement.appendChild(artistEle);
+            tbodyElement.appendChild(trElement);
+            tableElement.appendChild(tbodyElement);
+        }
     }
 
     if(!email){
@@ -159,6 +175,17 @@ function artistBtn(){
         document.getElementById("incomplete1").innerHTML = message1;
         document.getElementById("incomplete1").style.color = "red";
         email.focus();
+
+        if(email){
+            const tableElement = document.getElementById('table');
+            const trElement = document.createElement('tr');
+            const tbodyElement = document.createElement('tbody');
+            const emailEle = document.createElement('td');
+            emailEle.innerHTML = 'email';
+            trElement.appendChild(emailEle);
+            tbodyElement.appendChild(trElement);
+            tableElement.appendChild(tbodyElement);
+        }
     }
 
     if(!phone){
