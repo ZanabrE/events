@@ -409,3 +409,7 @@ th{
     font-family: var(--font-family);
     margin: auto;
 }
+
+tbody tr:nth-of-type(odd) {
+    background-color: rgb(179, 165, 128, 0.3);
+}
