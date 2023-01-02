@@ -31,10 +31,10 @@
 
             <div class="art_ticket">
                 <h2 class="art_booking">Art Ticket Booking</h2>
-                <form action="/tables.html" method="post">
+                <form action="/" method="post">
                     <div class="margin_art">
                         <select id="artist" class="form">
-                            <option selected="true" disabled="disabled">Artist</option>
+                            <option value="none" selected disabled hidden>Select an Artist</option>
                             <option value="Pablo">Pablo Picasso</option>
                             <option value="Vincent">Vincent van Gogh</option>
                             <option value="Leonardo">Leonardo da Vinci</option>
@@ -60,7 +60,7 @@
 
                     <div class="margin_art">
                         <select id="type" class="form">
-                            <option selected="true" disabled="disabled">Choose Ticket Type</option>
+                            <option disabled selected>Choose Ticket Type</option>
                             <option value="standard">Standard</option>
                             <option value="vip">VIP</option>
                         </select>
