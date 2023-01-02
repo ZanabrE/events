@@ -252,12 +252,17 @@ h2{
 
 /*-----------------------------------------------------------*/
 /*Beginning of the home page.*/
+.top_header{
+    margin-top: 80px;
+}
+/*End of top header style.*/
+
 .h1{
     text-align: center;
     border-radius: 0 0 10px 10px;
     font-size: 20pt;
     background-color: rgba(179, 165, 128, 0.4);
-    box-shadow: 0 3px 5px rgba(162, 149, 116, 0.4);
+    box-shadow: 0 3px 5px rgba(162, 149, 116, 0.8);
     margin: auto;
     padding: auto;
     width: 40%;
@@ -283,7 +288,7 @@ h2{
     display: flex;
     margin: auto;
     padding: auto;
-    margin-top: 120px;
+    margin-top: 100px;
     max-width: 40%;
 }
 /*End of section 1 style.*/
