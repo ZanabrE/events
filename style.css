@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600&family=Roboto:wgh@100;300;400;500;700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600&family=Roboto:wght@100;300;400;500;700&display=swap');
 /*Variables*/
 :root{
-    --font-family: 'Roboto', sans-serif;
-    --font-family2: 'Raleway', sans-serif;
+    --font-family: 'Raleway', sans-serif;
+    --font-family2: 'Roboto', sans-serif;
     --thin-font: 100;
     --extralight-font: 200;
     --light-font: 300;
