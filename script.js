@@ -28,6 +28,7 @@ function register(){
     });
 }
 
+//Register click function.
 function reg(){
     //Prevent submission.
     document.addEventListener('submit', function(event) {
@@ -82,6 +83,7 @@ function validation(){
     location.href="home.html";
 }
 
+//Signin click function
 function sign(){
     //Prevent submission.
     document.addEventListener('submit', function(event) {
@@ -91,7 +93,7 @@ function sign(){
     //Variables.
     const username = document.getElementById("username1").value;
     const password = document.getElementById("password1").value;
-    let tex4, text5;
+    let text4, text5;
 
     //Username is not empty.
     if(!username){
@@ -128,6 +130,7 @@ function validation1(){
 }
 
 //JavaScript home page.
+//Artist click function.
 function artistBtn(){
     //Prevent submission.
     document.addEventListener('submit', function(event) {
@@ -158,6 +161,12 @@ function artistBtn(){
 
     if(!phone){
         message2 = "Please enter a phone number";
+        document.getElementById("incomplete2").innerHTML = message2;
+        document.getElementById("incomplete2").style.color = "red";
+        phone.focus();
+    }
+    else if(phone > 0 && phone < 9){
+        message2 = "Please enter nine digits phone number!"
         document.getElementById("incomplete2").innerHTML = message2;
         document.getElementById("incomplete2").style.color = "red";
         phone.focus();
