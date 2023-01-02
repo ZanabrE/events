@@ -127,12 +127,8 @@ function validation1(){
     location.href="home.html";
 }
 
-//JavaScript functions home page.
-/*function home(){
-    return artist();
-}*/
-
-function artist(){
+//JavaScript home page.
+function artistBtn(){
     //Prevent submission.
     document.addEventListener('submit', function(event) {
         event.preventDefault();
