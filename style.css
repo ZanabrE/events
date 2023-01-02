@@ -350,6 +350,7 @@ h2{
     background-color: rgba(162, 149, 116, 0.8);
     border-bottom: 2px solid rgba(179, 165, 128, 0.6);
 }
+/*End of btn art/music hover style.*/
 
 .footer{
     background-color: rgba(179, 165, 128, -0.1);
@@ -361,5 +362,45 @@ h2{
     margin-top: 180px;
     padding-top: 20px;
     padding-bottom: 20px;
+    height: auto;
     position: sticky;
+}
+/*End of footer style.*/
+
+/********************************************************/
+/*Beginning of the tables page.*/
+.details{
+    justify-content: center;
+    display: flex;
+    width: auto;
+}
+/*End of details style.*/
+
+.booking_header{
+    font-size: 26pt;
+    margin-top:120px;
+    font-family: var(--font-family);
+    font-weight: var(--semibold-font);
+}
+/*End of booking header style.*/
+
+table{
+    border: 2px solid rgba(179, 165, 128, 0.6);
+    border-collapse: collapse;
+    table-layout: fixed;
+    margin: auto;
+    padding: auto;
+    width: 60%;
+}
+/*End of table style*/
+
+thead, tr{
+    background-color: rgba(179, 165, 128, 0.6);
+    width: auto;
+}
+
+th{
+    font-size: x-large;
+    font-family: var(--font-family);
+    margin: auto;
 }
