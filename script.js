@@ -143,7 +143,7 @@ function artistBtn(){
     });
 
     //Const variable.
-    const artist = document.getElementById("artist");
+    const artist = document.getElementById("artist").value;
     const email = document.getElementById("email").value;
     const phone = document.getElementById("phone").value;
     const date = document.getElementById("date").value;
@@ -157,7 +157,7 @@ function artistBtn(){
         document.getElementById("incomplete").innerHTML = message;
         document.getElementById("incomplete").style.color = "red";
         artist.focus();
-
+        
         if(artist){
             const tableElement = document.getElementById('table');
             const trElement = document.createElement('tr');
@@ -168,6 +168,7 @@ function artistBtn(){
             tbodyElement.appendChild(trElement);
             tableElement.appendChild(tbodyElement);
         }
+        
     }
 
     if(!email){
@@ -175,17 +176,6 @@ function artistBtn(){
         document.getElementById("incomplete1").innerHTML = message1;
         document.getElementById("incomplete1").style.color = "red";
         email.focus();
-
-        if(email){
-            const tableElement = document.getElementById('table');
-            const trElement = document.createElement('tr');
-            const tbodyElement = document.createElement('tbody');
-            const emailEle = document.createElement('td');
-            emailEle.innerHTML = 'email';
-            trElement.appendChild(emailEle);
-            tbodyElement.appendChild(trElement);
-            tableElement.appendChild(tbodyElement);
-        }
     }
 
     if(!phone){
