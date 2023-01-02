@@ -138,18 +138,20 @@ function artistBtn(){
     });
 
     //Const variable.
-    const people = document.getElementById("artist").value;
+    const artist = document.getElementById("artist").value;
     const email = document.getElementById("email").value;
     const phone = document.getElementById("phone").value;
     const date = document.getElementById("date").value;
+    const type = document.getElementById("type").value;
+    const number = document.getElementById("number").value;
     let message, message1, message2, message3, message4, message5;
 
     //Validate user's input.
-    if(!people){
+    if(!artist){
         message = "Please select an artist!";
         document.getElementById("incomplete").innerHTML = message;
         document.getElementById("incomplete").style.color = "red";
-        people.focus();
+        artist.focus();
     }
 
     if(!email){
@@ -165,18 +167,26 @@ function artistBtn(){
         document.getElementById("incomplete2").style.color = "red";
         phone.focus();
     }
-    else if(phone > 0 && phone < 9){
-        message2 = "Please enter nine digits phone number!"
-        document.getElementById("incomplete2").innerHTML = message2;
-        document.getElementById("incomplete2").style.color = "red";
-        phone.focus();
-    }
 
     if(!date){
         message3 = "Please enter the date!"
         document.getElementById("incomplete3").innerHTML = message3;
         document.getElementById("incomplete3").style.color = "red";
         date.focus();
+    }
+
+    if(!type){
+        message4 = "Please select standard or VIP ticket!";
+        document.getElementById("incomplete4").innerHTML = message4;
+        document.getElementById("incomplete4").style.color = "red";
+        type.focus();
+    }
+
+    if(!number){
+        message5 = "Please enter the number of tickets!";
+        document.getElementById("incomplete5").innerHTML = message5;
+        document.getElementById("incomplete5").style.color = "red";
+        phone.focus();
     }
     else{
         return bookingValidation();
@@ -186,11 +196,11 @@ function artistBtn(){
 
 function bookingValidation(){
     //Validate booking.
-    if(people === people && email === email && phone === phone && date === date){
+    if(artist === artist && email === email && phone === phone && date === date && type === type && number === number){
         alert("Thank you for booking your event!");
     }
     else{
         alert("Please enter all information!");
     }
-    location.href="table.html";
+    location.href="tables.html";
 }
