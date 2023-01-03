@@ -1,14 +1,11 @@
-function index(){
-    const register = document.getElementById('logbook_reg').style.display = 'none';
-    const signin = document.getElementById('logbook_sign').style.display = 'none';
-}
-
 function register(){
     //Hide/show an element.
-    //const register = document.getElementById('logbook_reg').style.display = 'none';
-    //const signin = document.getElementById('logbook_sign').style.display = 'none';
+    const register = document.getElementById('logbook_reg');
+    const signin = document.getElementById('logbook_sign');
     const record_reg = document.getElementById('btn_reg');
     const record_sign = document.getElementById('btn_sign');
+    register.style.display = "none";
+    signin.style.display = "none";
 
     record_reg.addEventListener('click', () => {
         const form = document.getElementById('logbook_reg');
@@ -168,7 +165,6 @@ function artistBtn(){
             tbodyElement.appendChild(trElement);
             tableElement.appendChild(tbodyElement);
         }
-        
     }
 
     if(!email){
@@ -219,5 +215,5 @@ function bookingValidation(){
     else{
         alert("Please enter all information!");
     }
-    location.href="tables.html";
+    //location.href="tables.html";
 }
