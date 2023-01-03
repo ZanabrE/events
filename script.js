@@ -133,6 +133,7 @@ function validation1(){
 
 //JavaScript home page.
 //Artist click function.
+
 function artistBtn(){
     //Prevent submission.
     document.addEventListener('submit', function(event) {
@@ -146,7 +147,7 @@ function artistBtn(){
     const date = document.getElementById("date").value;
     const type = document.getElementById("type").value;
     const number = document.getElementById("number").value;
-    let message, message1, message2, message3, message4, message5;
+    let message, message1, message2, message3, message4, message5,message6;
 
     //Validate user's input.
     if(!artist){
@@ -155,7 +156,8 @@ function artistBtn(){
         document.getElementById("incomplete").style.color = "red";
         artist.focus();
         
-        if(artist){
+        localStorage.setItem('artist', artist);
+        /*if(artist){
             const tableElement = document.getElementById('table');
             const trElement = document.createElement('tr');
             const tbodyElement = document.createElement('tbody');
@@ -164,7 +166,7 @@ function artistBtn(){
             trElement.appendChild(artistEle);
             tbodyElement.appendChild(trElement);
             tableElement.appendChild(tbodyElement);
-        }
+        }*/
     }
 
     if(!email){
@@ -215,5 +217,5 @@ function bookingValidation(){
     else{
         alert("Please enter all information!");
     }
-    //location.href="tables.html";
+    location.href="tables.html";
 }
