@@ -1,10 +1,10 @@
 function register(){
     //Hide/show an element.
-    const register = document.getElementById('logbook_reg');
+    const Register = document.getElementById('logbook_reg');
     const signin = document.getElementById('logbook_sign');
     const record_reg = document.getElementById('btn_reg');
     const record_sign = document.getElementById('btn_sign');
-    register.style.display = "none";
+    Register.style.display = "none";
     signin.style.display = "none";
 
     record_reg.addEventListener('click', () => {
@@ -131,9 +131,33 @@ function validation1(){
     location.href="home.html";
 }
 
-//JavaScript home page.
-//Artist click function.
+//Beginning of the home page.
+function home(){
+    const Art = document.getElementById("art_tables");
+    const bookingArt = document.getElementById("art_booking");
+    const Music = document.getElementById("music_tables");
+    const bookingMusic = document.getElementById("musician_booking");
+    Art.style.display = "none";
+    Music.style.display = "none";
 
+    bookingArt.addEventListener('click', () => {
+        const form = document.getElementById('art_tables');
+
+        if(form.style.display === 'none'){
+            form.style.display = 'block';
+        }
+    });
+
+    bookingMusic.addEventListener('click', () => {
+        const form = document.getElementById('musician_booking');
+
+        if(form.style.display === 'none'){
+            form.style.display = 'block';
+        }
+    });
+}
+
+//Artist button function.
 function artistBtn(){
     //Prevent submission.
     document.addEventListener('submit', function(event) {
@@ -147,7 +171,33 @@ function artistBtn(){
     const date = document.getElementById("date").value;
     const type = document.getElementById("type").value;
     const number = document.getElementById("number").value;
-    let message, message1, message2, message3, message4, message5,message6;
+    let message, message1, message2, message3, message4, message5;
+
+    if(artist && email && phone && date && type && number){
+        const tableElement = document.getElementById("table");
+        const trElement = document.createElement('tr');
+        const tbodyElement = document.createElement('tbody');
+        const artistEle = document.createElement('td');
+        const emailEle = document.createElement('td');
+        const phoneEle = document.createElement('td');
+        const dateEle = document.createElement('td');
+        const typeEle = document.createElement('td');
+        const numberEle = document.createElement('td');
+        artistEle.innerHTML = artist;
+        emailEle.innerHTML = email;
+        phoneEle.innerHTML = phone;
+        dateEle.innerHTML = date;
+        typeEle.innerHTML = type;
+        numberEle.innerHTML = number;
+        trElement.appendChild(artistEle);
+        trElement.appendChild(emailEle);
+        trElement.appendChild(phoneEle);
+        trElement.appendChild(dateEle);
+        trElement.appendChild(typeEle);
+        trElement.appendChild(numberEle);
+        tbodyElement.appendChild(trElement);
+        tableElement.appendChild(tbodyElement);
+    }
 
     //Validate user's input.
     if(!artist){
@@ -194,7 +244,6 @@ function artistBtn(){
     else{
         return bookingValidation();
     }
-
 }
 
 function bookingValidation(){
@@ -205,5 +254,103 @@ function bookingValidation(){
     else{
         alert("Please enter all information!");
     }
-    location.href="tables.html";
+}
+
+//Musician button function.
+function musicianBtn(){
+    //Prevent submission.
+    document.addEventListener('submit', function(event) {
+        event.preventDefault();
+    });
+
+    //Const variable.
+    const musician = document.getElementById("musician").value;
+    const email_music = document.getElementById("email_music").value;
+    const phone_music = document.getElementById("phone_music").value;
+    const date_music = document.getElementById("date_music").value;
+    const type_music = document.getElementById("type_music").value;
+    const number_music = document.getElementById("number_music").value;
+    let message, message1, message2, message3, message4, message5;
+
+    if(artist && email && phone && date && type && number){
+        const tableElement = document.getElementById("table");
+        const trElement = document.createElement('tr');
+        const tbodyElement = document.createElement('tbody');
+        const musicianEle = document.createElement('td');
+        const emailEle = document.createElement('td');
+        const phoneEle = document.createElement('td');
+        const dateEle = document.createElement('td');
+        const typeEle = document.createElement('td');
+        const numberEle = document.createElement('td');
+        musicianEle.innerHTML = musician;
+        emailEle.innerHTML = email_music;
+        phoneEle.innerHTML = phone_music;
+        dateEle.innerHTML = date_music;
+        typeEle.innerHTML = type_music;
+        numberEle.innerHTML = number_music;
+        trElement.appendChild(musicianEle);
+        trElement.appendChild(emailEle);
+        trElement.appendChild(phoneEle);
+        trElement.appendChild(dateEle);
+        trElement.appendChild(typeEle);
+        trElement.appendChild(numberEle);
+        tbodyElement.appendChild(trElement);
+        tableElement.appendChild(tbodyElement);
+    }
+
+    //Validate user's input.
+    if(!musician){
+        message = "Please select an artist!";
+        document.getElementById("incomplete").innerHTML = message;
+        document.getElementById("incomplete").style.color = "red";
+        artist.focus();
+    }
+
+    if(!email_music){
+        message1 = "Please enter email address!";
+        document.getElementById("incomplete1").innerHTML = message1;
+        document.getElementById("incomplete1").style.color = "red";
+        email.focus();
+    }
+
+    if(!phone_music){
+        message2 = "Please enter a phone number";
+        document.getElementById("incomplete2").innerHTML = message2;
+        document.getElementById("incomplete2").style.color = "red";
+        phone.focus();
+    }
+
+    if(!date_music){
+        message3 = "Please enter the date!"
+        document.getElementById("incomplete3").innerHTML = message3;
+        document.getElementById("incomplete3").style.color = "red";
+        date.focus();
+    }
+
+    if(!type_music){
+        message4 = "Please select standard or VIP ticket!";
+        document.getElementById("incomplete4").innerHTML = message4;
+        document.getElementById("incomplete4").style.color = "red";
+        type.focus();
+    }
+
+    if(!number_music){
+        message5 = "Please enter the number of tickets!";
+        document.getElementById("incomplete5").innerHTML = message5;
+        document.getElementById("incomplete5").style.color = "red";
+        phone.focus();
+    }
+    else{
+        return musicianValidation();
+    }
+}
+
+function musicianValidation(){
+    //Validate booking.
+    if(musician === musician && email_music === email_music && phone_music === phone_music && date_music === date_music && type_music === type_music && number_music === number_music){
+        alert("Thank you for booking your event!");
+    }
+    else{
+        alert("Please enter all information!");
+    } 
 }
