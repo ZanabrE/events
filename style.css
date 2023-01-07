@@ -404,6 +404,10 @@ thead, tr{
     width: auto;
 }
 
+td{
+    text-align: center;
+}
+
 th{
     font-size: x-large;
     font-family: var(--font-family);
