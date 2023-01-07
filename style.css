@@ -294,44 +294,46 @@ h2{
 /*End of section 1 style.*/
 
 .art, .music{
-    margin: 20px;
-    padding: 20px;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    padding: auto;
 }
 /*End of art style.*/
 
-.art, .music, img{
-    margin-right: auto;
+img{
+    display: block;
+    margin: auto;
+    padding: auto;
 }
 /*End of img style.*/
 
 .art_text, .music_text{
     font-size: 22pt;
-    padding-left: 30px;
     font-family: var(--font-family2);
     font-weight: var(--medium-font);
 }
 /*End of art text style.*/
 
 .art_ticket, .music_ticket{
-    width: 68%;
+    width: 74%;
 }
 /*End of art ticket style.*/
 
 .art_booking, .music_booking{
     font-size: 22pt;
-    margin-right: 160px;
-    padding: auto;
     text-align: center;
 }
 /*End of art/music booking style.*/
 
 .form{
+    justify-content: center;
     outline: none;
     border-radius: 6px;
     height: 28px;
+    margin-left: 40px;
     margin-bottom: 4px;
-    padding: auto;
-    width: 60%;
+    width: 80%;
 }
 /*End of form style.*/
 
