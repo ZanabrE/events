@@ -155,18 +155,6 @@ function artistBtn(){
         document.getElementById("incomplete").innerHTML = message;
         document.getElementById("incomplete").style.color = "red";
         artist.focus();
-        
-        localStorage.setItem('artist', artist);
-        /*if(artist){
-            const tableElement = document.getElementById('table');
-            const trElement = document.createElement('tr');
-            const tbodyElement = document.createElement('tbody');
-            const artistEle = document.createElement('td');
-            artistEle.innerHTML = 'artist';
-            trElement.appendChild(artistEle);
-            tbodyElement.appendChild(trElement);
-            tableElement.appendChild(tbodyElement);
-        }*/
     }
 
     if(!email){
