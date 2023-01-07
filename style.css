@@ -399,7 +399,7 @@ table{
 }
 /*End of table style*/
 
-thead, tr{
+thead{
     background-color: rgba(179, 165, 128, 0.6);
     width: auto;
 }
@@ -414,6 +414,6 @@ th{
     margin: auto;
 }
 
-tbody tr:nth-of-type(odd) {
+tr:nth-child(odd) {
     background-color: rgb(179, 165, 128, 0.3);
 }
