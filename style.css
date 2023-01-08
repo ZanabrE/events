@@ -60,6 +60,7 @@ body{
     padding: 1.5rem 3.5rem;
     background-color: rgba(179, 165, 128, 0.2);
     box-shadow: 0 3px 5px rgba(162, 149, 116, 0.6);
+    border-bottom: 2px solid rgb(179, 165, 128);
 }
 /*End nav class style.*/
 
@@ -78,6 +79,11 @@ body{
     cursor: pointer;
 }
 /*End logo hover style.*/
+
+.indexLink{
+    color: #FFFFFF;
+}
+/*End of index link style.*/
 
 .social{
     font-family: var(--font-family);
@@ -108,6 +114,8 @@ body{
     color: #FFFFFF;
     font-family: var(--font-family2);
     font-weight: var(--medium-font);
+    border-bottom: 2px solid rgb(179, 165, 128);
+    border-radius: 0 0 10px 10px;
     font-size: 18pt;
 }
 /*End register and signin style.*/
@@ -198,7 +206,6 @@ h2{
 .margin{
     justify-content: center;
     text-align: center;
-    padding: 3px;
 }
 /*End margin style.*/
 
@@ -244,14 +251,20 @@ h2{
     padding-top: 20px;
     padding-bottom: 20px;
     font-size: 18pt;
-    font-family: var(--font-family2);
+    font-family: var(--font-family);
     font-weight: var(--medium-font);
     box-shadow: 0 -3px 5px rgba(162, 149, 116, 0.6);
+    border-top: 2px solid rgb(179, 165, 128);
 }
 /*End copyrights style.*/
 
 /*-----------------------------------------------------------*/
 /*Beginning of the home page.*/
+.socialLink{
+    color: #FFFFFF;
+}
+/*End of social link style.*/
+
 .top_header{
     margin-top: 80px;
 }
@@ -261,8 +274,9 @@ h2{
     text-align: center;
     border-radius: 0 0 10px 10px;
     font-size: 20pt;
-    background-color: rgba(179, 165, 128, 0.4);
+    background-color: rgba(179, 165, 128, 0.6);
     box-shadow: 0 3px 5px rgba(162, 149, 116, 0.8);
+    border-bottom: 2px solid rgb(179, 165, 128);
     margin: auto;
     padding: auto;
     width: 40%;
@@ -284,6 +298,8 @@ h2{
 .section1, .section2{
     background-color: rgba(179, 165, 128, 0.3);
     box-shadow: 0 3px 5px rgb(162, 149, 116, 0.6);
+    border-bottom: 2px solid rgb(179, 165, 128);
+    border-radius: 0 0 10px 10px;
     justify-content: center;
     display: flex;
     margin: auto;
@@ -326,6 +342,11 @@ img{
 }
 /*End of art/music booking style.*/
 
+.margin_art{
+    justify-content: center;
+}
+/*End of margin art style.*/
+
 .form{
     justify-content: center;
     outline: none;
@@ -363,9 +384,10 @@ img{
     background-color: rgba(179, 165, 128, -0.1);
     text-align: center;
     font-size: 18pt;
-    font-family: var(--font-family2);
+    font-family: var(--font-family);
     font-weight: var(--medium-font);
     box-shadow: 0 -3px 5px rgba(162, 149, 116, 0.6);
+    border-top: 2px solid rgb(179, 165, 128);
     margin-top: 180px;
     padding-top: 20px;
     padding-bottom: 20px;
