@@ -133,13 +133,13 @@ function validation1(){
 
 //Beginning of the home page.
 function home(){
-    const Music = document.getElementById("music_tables");
+    const booking = document.getElementById("booking_tables");
     const bookingArt = document.getElementById("art_booking");
-    const bookingMusic = document.getElementById("musician_booking");
-    Music.style.display = "none";
+    const bookingMusic = document.getElementById("music_booking");
+    booking.style.display = "none";
 
     bookingArt.addEventListener('click', () => {
-        const form = document.getElementById('art_tables');
+        const form = document.getElementById('booking_tables');
 
         if(form.style.display === 'none'){
             form.style.display = 'block';
@@ -147,7 +147,7 @@ function home(){
     });
 
     bookingMusic.addEventListener('click', () => {
-        const form = document.getElementById('music_tables');
+        const form = document.getElementById('booking_tables');
 
         if(form.style.display === 'none'){
             form.style.display = 'block';
