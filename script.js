@@ -133,11 +133,9 @@ function validation1(){
 
 //Beginning of the home page.
 function home(){
-    const Art = document.getElementById("art_tables");
-    const bookingArt = document.getElementById("art_booking");
     const Music = document.getElementById("music_tables");
+    const bookingArt = document.getElementById("art_booking");
     const bookingMusic = document.getElementById("musician_booking");
-    Art.style.display = "none";
     Music.style.display = "none";
 
     bookingArt.addEventListener('click', () => {
@@ -149,7 +147,7 @@ function home(){
     });
 
     bookingMusic.addEventListener('click', () => {
-        const form = document.getElementById('musician_booking');
+        const form = document.getElementById('music_tables');
 
         if(form.style.display === 'none'){
             form.style.display = 'block';
@@ -300,45 +298,45 @@ function musicianBtn(){
 
     //Validate user's input.
     if(!musician){
-        message = "Please select an artist!";
-        document.getElementById("incomplete").innerHTML = message;
-        document.getElementById("incomplete").style.color = "red";
-        artist.focus();
+        message = "Please select a musician!";
+        document.getElementById("musicianMessage").innerHTML = message;
+        document.getElementById("musicianMessage").style.color = "red";
+        musician.focus();
     }
 
     if(!email_music){
         message1 = "Please enter email address!";
-        document.getElementById("incomplete1").innerHTML = message1;
-        document.getElementById("incomplete1").style.color = "red";
-        email.focus();
+        document.getElementById("emailMessage").innerHTML = message1;
+        document.getElementById("emailMessage").style.color = "red";
+        email_music.focus();
     }
 
     if(!phone_music){
         message2 = "Please enter a phone number";
-        document.getElementById("incomplete2").innerHTML = message2;
-        document.getElementById("incomplete2").style.color = "red";
-        phone.focus();
+        document.getElementById("phoneMessage").innerHTML = message2;
+        document.getElementById("phoneMessage").style.color = "red";
+        phone_music.focus();
     }
 
     if(!date_music){
         message3 = "Please enter the date!"
-        document.getElementById("incomplete3").innerHTML = message3;
-        document.getElementById("incomplete3").style.color = "red";
-        date.focus();
+        document.getElementById("dateMessage").innerHTML = message3;
+        document.getElementById("dateMessage").style.color = "red";
+        date_music.focus();
     }
 
     if(!type_music){
         message4 = "Please select standard or VIP ticket!";
-        document.getElementById("incomplete4").innerHTML = message4;
-        document.getElementById("incomplete4").style.color = "red";
-        type.focus();
+        document.getElementById("typeMessage").innerHTML = message4;
+        document.getElementById("typeMessage").style.color = "red";
+        type_music.focus();
     }
 
     if(!number_music){
         message5 = "Please enter the number of tickets!";
-        document.getElementById("incomplete5").innerHTML = message5;
-        document.getElementById("incomplete5").style.color = "red";
-        phone.focus();
+        document.getElementById("numberMessage").innerHTML = message5;
+        document.getElementById("numberMessage").style.color = "red";
+        phone_music.focus();
     }
     else{
         return musicianValidation();
