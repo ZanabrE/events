@@ -21,8 +21,10 @@
         <header>
             <nav class="nav">
                 <div class="logo">
-                    <p class="social">Social</p>
-                    <p><span class="inter">Inter</span><span class="duction">duction</span></p>
+                    <a href="index.html" class="socialLink">
+                        <p class="social">Social</p>
+                        <p><span class="inter">Inter</span><span class="duction">duction</span></p>
+                    </a><!--End of social link.-->
                 </div><!--End of logo.-->
 
                 <ul class="links">
@@ -100,24 +102,6 @@
             </div><!--End of art ticket class.-->
         </section><!--End of section 1.-->
 
-        <section class="details">
-            <div id="art_tables">
-                <h2 class="booking_header">Booking Information</h2>
-                <table id="table">
-                    <thead>
-                        <tr>
-                            <th>Artist/Musician</th>
-                            <th>Email</th>
-                            <th>Phone Number</th>
-                            <th>Booking Date</th>
-                            <th>Ticket Type</th>
-                            <th>Tickets</th>
-                        </tr>
-                    </thead>
-                </table><!--End of table.-->
-            </div><!--End of tables.-->
-        </section>
-
         <section class="section2">
             <div class="music">
                 <img src="images/icons8-music-notation-96.png" alt="music"
@@ -137,18 +121,22 @@
                             <option value="Nirvana">Nirvana</option>
                             <option value="Michael Jackson">Michael Jackson</option>
                         </select>
+                        <p><span id="musicianMessage"></span></p>
                     </div>
 
                     <div clas="margin_music">
                         <input autocomplete="off" autofocus id="email_music" class="form" placeholder="Email" name="email" type="text">
+                        <p><span id="emailMessage"></span></p>
                     </div>
 
                     <div class="margin_music">
                         <input autocomplete="off" autofocus id="phone_music" class="form" placeholder="Phone number" name="phone" type="tel">
+                        <p><span id="phoneMessage"></span></p>
                     </div>
 
                     <div class="margin_music">
                         <input id="date_music" class="form" name="date" type="date">
+                        <p><span id="dateMessage"></span></p>
                     </div>
 
                     <div class="margin_music">
@@ -157,6 +145,7 @@
                             <option value="Standard">Standard</option>
                             <option value="VIP">VIP</option>
                         </select>
+                        <p><span id="typeMessage"></span></p>
                     </div>
 
                     <div class="margin_music">
@@ -167,6 +156,7 @@
                             <option value="3">3</option>
                             <option value="4">4</option>
                         </select>
+                        <p><span id="numberMessage"></span></p>
                     </div>
 
                     <div class="music_submit">
