@@ -104,15 +104,14 @@ body{
 /*End duction class style.*/
 
 #btn_reg, #btn_sign{
-    background-color: rgba(162, 149, 116, 0.2);
+    background-color: rgba(162, 149, 116, 0.6);
     border-radius: 10px 10px 10px;
-    transition: 0.5s ease-in;
-    border: none;
+    padding: 5px;
 }
 
 .register, .signin{
     color: #FFFFFF;
-    font-family: var(--font-family2);
+    font-family: var(--font-family);
     font-weight: var(--medium-font);
     border-bottom: 2px solid rgb(179, 165, 128);
     border-radius: 0 0 10px 10px;
@@ -125,7 +124,7 @@ body{
     background-color: rgba(162, 149, 116, 0.2);
     border-radius: 10px 10px 10px;
     padding: 4px 4px;
-    transition: 0.3s;
+    transition: 0.3s ease-in;
 }
 /*End register class hover style.*/
 
