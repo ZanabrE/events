@@ -237,7 +237,7 @@ function artistBtn(){
         message5 = "Please enter the number of tickets!";
         document.getElementById("incomplete5").innerHTML = message5;
         document.getElementById("incomplete5").style.color = "red";
-        phone.focus();
+        number.focus();
     }
     else{
         return bookingValidation();
