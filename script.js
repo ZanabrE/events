@@ -270,7 +270,7 @@ function musicianBtn(){
     const number_music = document.getElementById("number_music").value;
     let message, message1, message2, message3, message4, message5;
 
-    if(artist && email && phone && date && type && number){
+    if(musician && email_music && phone_music && date_music && type_music && number_music){
         const tableElement = document.getElementById("table");
         const trElement = document.createElement('tr');
         const tbodyElement = document.createElement('tbody');
